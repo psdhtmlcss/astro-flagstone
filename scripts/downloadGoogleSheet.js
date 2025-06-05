@@ -4,7 +4,17 @@ const path = require('path');
 const https = require('https');
 const csv = require('csvtojson');
 const redirectCodes = [300, 301, 302, 303, 304, 305, 306, 307, 308];
-const outputPath = path.join(__dirname, 'output.json');
+const args = process.argv.slice(2);
+const params = {};
+
+args.forEach(arg => {
+    const [key, value] = arg.replace('--', '').split('=');
+    params[key] = value;
+});
+
+const outputPath = params.outputName 
+    ? path.join(__dirname, '..', 'src', 'data', params.outputName) 
+    : console.log('Не указано имя выходного файла');
 
 const writeData = (response) => {
     let data = '';
@@ -20,7 +30,7 @@ const writeData = (response) => {
 const convertToJSON = (data) => {
     csv().fromString(data).then((json) => {
         fs.writeFileSync(outputPath, JSON.stringify(json, null, 2));
-        console.log('Данные успешно сохранены в output.json');
+        console.log('Данные успешно сохранены.');
         process.exit(0);
     }).catch(error => {
         console.error('Ошибка при конвертации данных:', error);
@@ -28,17 +38,17 @@ const convertToJSON = (data) => {
     });
 };
 
-function getPrices() {
+function getData() {
     const tableId = process.env.SHEET_ID;
-    const sheetId = process.env.VL_GID;
+    const gid = params.gid;
 
-    if (!tableId || !sheetId) {
-        console.error('Ошибка: не указаны SHEET_ID или VL_GID в .env файле');
+    if (!tableId || !gid) {
+        console.error('Ошибка: не указаны SHEET_ID или GID');
         process.exit(1);
     }
 
     // Создаем правильный URL для экспорта
-    const url = `https://docs.google.com/spreadsheets/d/${tableId}/export?format=csv&gid=${sheetId}`;
+    const url = `https://docs.google.com/spreadsheets/d/${tableId}/export?format=csv&gid=${gid}`;
     
     https.get(url, (response) => {
         if (redirectCodes.includes(response.statusCode)) {
@@ -55,4 +65,4 @@ function getPrices() {
     });
 }
 
-getPrices();
+getData();

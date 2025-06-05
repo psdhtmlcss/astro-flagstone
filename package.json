@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "vl": "node scripts/downloadGoogleSheet.js --gid=0 --outputName=vl.json",
+    "vlb": "node scripts/downloadGoogleSheet.js --gid=362125618 --outputName=vlb.json"
   },
   "keywords": [],
   "author": "",
