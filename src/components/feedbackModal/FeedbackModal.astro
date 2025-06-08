@@ -1,3 +1,7 @@
+---
+import FormFeedback from '@/components/formFeedback/FormFeedback.astro';
+---
+
 <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal__content">
@@ -17,7 +21,7 @@
       </div>
       <div class="modal__body">
         <h3 class="modal-title fs-5" id="feedbackModalLabel">Получить консультацию</h3>
-        {% include '../form-feedback/form-feedback-drupal.twig' %}
+        <FormFeedback />
       </div>
     </div>
   </div>

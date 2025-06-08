@@ -1,3 +1,12 @@
+---
+import Reviews from '@/components/reviews/Reviews.astro';
+import MaterialsComponents from '@/components/materialsComponents/MaterialsComponents.astro';
+import DeliveryInfo from '@/components/deliveryInfo/DeliveryInfo.astro';
+import LayingTiles from '@/components/layingTiles/LayingTiles.astro';
+import PaymentMethods from '@/components/paymentMethods/PaymentMethods.astro';
+import Certificates from '@/components/certificates/Certificates.astro';
+---
+
 <section class="product-info">
   <div class="product-info__top">
     <div class="product-info__top-left">
@@ -28,12 +37,12 @@
           <div class="swiper-button-next"></div>
         </div>
       </div>
-      {# <div class="product-info__photo-link">
+      <!-- <div class="product-info__photo-link">
         <svg width="100" height="58" viewBox="0 0 100 58" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M48.932 56.9764H54.8973C54.8973 56.9764 56.6996 56.7773 57.6178 55.7821C58.4669 54.8691 58.4345 53.1538 58.4345 53.1538C58.4345 53.1538 58.3167 45.1275 62.0356 43.9442C65.6983 42.7806 70.4025 51.7038 75.3879 55.1379C79.1565 57.7333 82.0211 57.1647 82.0211 57.1647L95.355 56.9766C95.355 56.9766 102.33 56.5452 99.0234 51.0459C98.7558 50.5965 97.0956 46.9796 89.109 39.5463C80.7477 31.763 81.8697 33.0266 91.941 19.5689C98.0749 11.3733 100.528 6.36784 99.7596 4.2281C99.0295 2.18856 94.5192 2.72705 94.5192 2.72705L79.5182 2.81512C79.5182 2.81512 78.4071 2.66429 77.5782 3.15885C76.772 3.64629 76.2544 4.77307 76.2544 4.77307C76.2544 4.77307 73.8776 11.1164 70.7079 16.5111C64.0249 27.8906 61.3489 28.4917 60.2563 27.784C57.7163 26.1392 58.3538 21.1643 58.3538 17.6358C58.3538 6.60529 60.0201 2.00738 55.1029 0.818889C53.4674 0.424538 52.2701 0.161567 48.0962 0.118471C42.7418 0.0615673 38.2056 0.136881 35.642 1.39399C33.932 2.2327 32.6148 4.10383 33.4199 4.20968C34.4121 4.34127 36.6581 4.81638 37.8504 6.44378C39.392 8.53939 39.3353 13.2574 39.3353 13.2574C39.3353 13.2574 40.2207 26.2381 37.2694 27.8536C35.2412 28.9607 32.4657 26.7011 26.5063 16.3718C23.4554 11.0858 21.1469 5.23521 21.1469 5.23521C21.1469 5.23521 20.704 4.14797 19.9115 3.56575C18.9504 2.85843 17.6021 2.63416 17.6021 2.63416L3.33953 2.72056C3.33953 2.72056 1.19852 2.78437 0.412332 3.71512C-0.285994 4.5486 0.356265 6.2624 0.356265 6.2624C0.356265 6.2624 11.5251 32.4578 24.1678 45.6645C35.7667 57.7712 48.932 56.9764 48.932 56.9764Z" fill="#1F8EEF"/>
         </svg>
         <a href="https://vk.com/flagstoun" target="newtab">В нашем VK еще больше примеров работ и фото. Присоединяйтесь!</a>
-      </div> #}
+      </div> -->
     </div>
     <div class="product-info__description">
       <div class="product-info__price product-price">
@@ -176,7 +185,7 @@
       </h2>
       <div id="collapseTwo" class="accordion__collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion__body">
-          {% include '../reviews/reviews.twig' %}
+          <Reviews />
         </div>
       </div>
     </div>
@@ -191,7 +200,7 @@
       </h2>
       <div id="collapse3" class="accordion__collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion__body">
-          {% include '../materials-components/materials-components.twig' %}
+          <MaterialsComponents />
         </div>
       </div>
     </div>
@@ -206,7 +215,7 @@
       </h2>
       <div id="collapse4" class="accordion__collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion__body">
-          {% include '../delivery-info/delivery-info.twig' %}
+          <DeliveryInfo />
         </div>
       </div>
     </div>
@@ -221,7 +230,7 @@
       </h2>
       <div id="collapse5" class="accordion__collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion__body">
-          {% include '../laying-tiles/laying-tiles.twig' %}
+          <LayingTiles />
         </div>
       </div>
     </div>
@@ -236,7 +245,7 @@
       </h2>
       <div id="collapse6" class="accordion__collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion__body">
-          {% include '../payment-methods/payment-methods.twig' %}
+          <PaymentMethods />
         </div>
       </div>
     </div>
@@ -251,7 +260,7 @@
       </h2>
       <div id="collapse7" class="accordion__collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion__body">
-          {% include '../certificates/certificates.twig' %}
+          <Certificates />
         </div>
       </div>
     </div>
