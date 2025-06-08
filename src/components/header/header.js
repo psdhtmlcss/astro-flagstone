@@ -1,3 +1,3 @@
-import './js/mobile-menu-button/mobile-menu-button';
-import './js/products-menu-button/products-menu-button';
+import './js/mobileMenuButton/mobileMenuButton';
+import './js/productsMenuButton/productsMenuButton';
 import './js/nav/nav';

@@ -7,6 +7,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "renameFiles": "node scripts/renameFiles.js",
     "vl": "node scripts/downloadGoogleSheet.js --gid=0 --outputName=vl.json",
     "vlb": "node scripts/downloadGoogleSheet.js --gid=362125618 --outputName=vlb.json"
   },
@@ -17,5 +18,8 @@
     "astro": "^5.8.0",
     "csvtojson": "^2.0.10",
     "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "sass": "^1.89.1"
   }
 }
