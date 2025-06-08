@@ -2,61 +2,60 @@
 @import '@/common/common.scss';
 @import '@/components/page/page.scss';
 @import '@/components/main/main.scss';
-@import '@/components/left-nav/left-nav.scss';
+@import '@/components/leftNav/leftNav.scss';
 @import '@/components/container/container.scss';
 @import '@/components/header/header.scss';
-@import '@/components/products-nav/products-nav.scss';
-@import '@/components/ratings-block/ratings-block.scss';
+@import '@/components/productsNav/productsNav.scss';
+@import '@/components/ratingsBlock/ratingsBlock.scss';
 @import '@/components/footer/footer.scss';
-@import '@/components/mobile-fixed-panel/mobile-fixed-panel.scss';
-@import '@/components/feedback-modal/feedback-modal.scss';
-@import '@/components/form-feedback/form-feedback-drupal.scss';
+@import '@/components/mobileFixedPanel/mobileFixedPanel.scss';
+@import '@/components/feedbackModal/feedbackModal.scss';
+@import '@/components/formFeedback/formFeedback.scss';
 @import '@/components/breadcrumbs/breadcrumbs.scss';
-@import '@/components/cookie-block/cookie-block.scss';
+@import '@/components/cookieBlock/cookieBlock.scss';
 // Form elements
 @import '@/components/btn/btn.scss';
-@import '@/components/form-control/form-control.scss';
-@import '@/components/input-group/input-group.scss';
-@import '@/components/form-label/form-label.scss';
+@import '@/components/formControl/formControl.scss';
+@import '@/components/inputGroup/inputGroup.scss';
+@import '@/components/formLabel/formLabel.scss';
 // New year banner
-@import '@/components/banner-new-year/banner-new-year.scss';
+@import '@/components/bannerNewYear/bannerNewYear.scss';
 // Banner sale
-@import '@/components/banner-sale/banner-sale.scss';
+@import '@/components/bannerSale/bannerSale.scss';
 
 // Components
-@import './product-card/product-card.scss';
-@import './product-card/product-card-lg.scss';
-@import './product-info/product-info.scss';
-@import './product-page/product-page.scss';
-@import './products-category/products-category.scss';
+@import './productCard/productCard.scss';
+@import './productCard/productCardLg.scss';
+@import './productInfo/productInfo.scss';
+@import './productPage/productPage.scss';
+@import './productsCategory/productsCategory.scss';
 @import './reviews/reviews.scss';
 @import './section/section.scss';
 @import './swiper/swiper.scss';
 @import './table/table.scss';
 @import './timeline/timeline.scss';
 @import './videos/videos.scss';
-@import './views-technology/views-technology.scss';
+@import './viewsTechnology/viewsTechnology.scss';
 @import './badge/badge.scss';
-@import './block-certificates/block-certificates.scss';
-@import './catalog-block/catalog-block.scss';
-@import './catalog-items/catalog-items.scss';
+@import './blockCertificates/blockCertificates.scss';
+@import './catalogBlock/catalogBlock.scss';
+@import './catalogItems/catalogItems.scss';
 @import './certificates/certificates.scss';
-@import './check-list/check-list.scss';
-@import './company-advantages/company-advantages.scss';
-@import './delivery-info/delivery-info.scss';
+@import './checkList/checkList.scss';
+@import './companyAdvantages/companyAdvantages.scss';
+@import './deliveryInfo/deliveryInfo.scss';
 @import './jumbotron/jumbotron.scss';
-@import './landing-page/landing-page.scss';
-@import './laying-tiles/laying-tiles.scss';
-@import './list-horizontal/list-horizontal.scss';
-@import './main-slider/main-slider.scss';
-@import './materials-components/materials-components.scss';
-@import './mobile-fixed-panel/mobile-fixed-panel.scss';
+@import './landingPage/landingPage.scss';
+@import './layingTiles/layingTiles.scss';
+@import './listHorizontal/listHorizontal.scss';
+@import './mainSlider/mainSlider.scss';
+@import './materialsComponents/materialsComponents.scss';
 @import './panel/panel.scss';
-@import './payment-methods/payment-methods.scss';
+@import './paymentMethods/paymentMethods.scss';
 @import './accordion/accordion.scss';
 
 // Quiz
-#block-flagstone-kvizdlyatrotuarnoyplitki,
-#block-quiz-ik {
-  margin-top: 30px;
+#blockFlagstone-kvizdlyatrotuarnoyplitki,
+#blockQuiz-ik {
+  marginTop: 30px;
 }
