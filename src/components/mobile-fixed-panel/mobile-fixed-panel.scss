@@ -1,0 +1,74 @@
+.mobile-fixed-panel {
+  display: none;
+
+  @media screen and (max-width: $mobile) {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    background-color: $white;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, .1);
+    border-radius: $border-radius-lg $border-radius-lg 0 0;
+    padding: $gap $col-padding 15px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: $xs) {
+    padding-top: $col-padding; 
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: $col-padding;
+    margin-bottom: $col-padding;
+
+    .btn {
+      height: auto;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      @media screen and (max-width: $xs) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    gap: $col-padding;
+    justify-content: space-between;
+    align-items: center;
+
+    a.btn {
+      color: $blue-dark;
+      width: 50%;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 13px;
+      padding: 0 10px;
+
+      svg {
+        flex-shrink: 0;
+        width: 24px;
+      }
+    }
+
+    a.phone {
+      width: 100%;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: $blue-dark;
+      text-transform: uppercase;
+      font-size: 12px;
+
+      strong {
+        display: block;
+        font-size: 16px;
+        text-transform: none;
+      }
+    }
+  }
+}

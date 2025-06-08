@@ -1,0 +1,19 @@
+.reviews {
+  max-height: 500px;
+  overflow-y: auto;
+
+  @media screen and (max-width: $mobile) {
+    max-height: 300px;
+  }
+  blockquote {
+    margin: 0 0 15px;
+  }
+
+  p {
+    margin: 0 0 $col-padding;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

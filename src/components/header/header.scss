@@ -1,0 +1,76 @@
+@import "scss/logo-and-slogan/logo-and-slogan";
+@import "scss/nav/nav";
+@import "scss/contacts/contacts";
+@import "scss/products-menu-button/products-menu-button";
+@import "scss/mobile-menu-button/mobile-menu-button";
+
+.header {
+  background-color: white;
+
+  @media screen and (max-width: $mobile) {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: $box-shadow;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: $gap;
+    height: 97px;
+
+    @media screen and (max-width: $mobile) {
+      height: 50px;
+    }
+  }
+
+  &__logo {
+    width: $aside-width;
+
+    @media screen and (max-width: $mobile) {
+      width: auto;
+    }
+  }
+
+  &__nav {
+    @media screen and (max-width: $pc) {
+      position: fixed;
+      right: -100%;
+      top: 0;
+      z-index: 1000;
+      @include transition(transform);
+
+      &.open {
+        transform: translateX(-100%);
+      }
+    }
+  }
+
+  &__contacts {
+    margin-left: auto;
+
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__mobile-menu-button {
+    display: none;
+
+    @media screen and (max-width: $pc) {
+      display: inline-flex;
+    }
+  }
+
+  &__mobile-products-menu-button {
+    display: none;
+
+    @media screen and (max-width: $mobile) {
+      display: inline-flex;
+      margin-left: auto;
+    }
+  }
+}

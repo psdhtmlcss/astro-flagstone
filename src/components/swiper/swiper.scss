@@ -1,0 +1,26 @@
+:root {
+  // Pagination
+  --swiper-pagination-bullet-inactive-color: #fff;
+  --swiper-pagination-bullet-inactive-opacity: .5;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-color: #fff;
+  // Navigation
+  --swiper-navigation-color: #fff;
+}
+
+// Pagination
+.swiper-pagination-bullet {
+  background: var(--swiper-pagination-bullet-inactive-color);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity);
+}
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity);
+  background: var(--swiper-pagination-color);
+}
+
+// Navigation
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--swiper-navigation-color);
+}

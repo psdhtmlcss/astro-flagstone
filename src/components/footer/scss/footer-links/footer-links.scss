@@ -1,0 +1,10 @@
+.footer-links {
+  a {
+    color: $blue-light;
+    @include transition(color);
+
+    &:hover {
+      color: $green-light;
+    }
+  }
+}

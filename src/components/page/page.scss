@@ -1,0 +1,64 @@
+.page {
+  height: 100%;
+  scroll-behavior: smooth;
+  
+  &__body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    background-color: $bg-color;
+    color: $blue-dark;
+
+    @media screen and (max-width: $mobile) {
+      padding-top: 50px;
+    }
+  }
+
+  &__content {
+    flex-shrink: 0;
+    padding: 50px 0;
+
+    @media screen and (max-width: $mobile) {
+      padding: $gap 0;
+    }
+    
+  &>.container {
+      display: flex;
+      gap: $gap;
+    }
+  }
+
+  &__aside {
+    width: $aside-width;
+    flex-shrink: 0;
+
+    @media screen and (max-width: $pc) {
+      display: none;
+    }
+
+    & + .page__main {
+      max-width: calc(100% - $aside-width - $gap);
+
+      @media screen and (max-width: $pc) {
+        max-width: initial;
+      }
+    }
+  }
+
+  &__banner {
+    margin-bottom: $gap;
+  }
+
+  &__main {
+    width: 100%;
+  }
+
+  &__footer {
+    margin-top: auto;
+  }
+}

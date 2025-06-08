@@ -1,0 +1,32 @@
+.banner-new-year {
+  display: block;
+  background: url("../../img/banner.webp") left top no-repeat;
+  background-size: cover;
+  min-height: 230px;
+  text-align: right;
+  padding: 10px 15px 10px 374px;
+  font-size: 30px;
+  line-height: 1.2;
+  border-radius: $border-radius-lg;
+  text-decoration: none;
+  color: $blue-dark;
+
+  &>span {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  &>small {
+    display: block;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  @media screen and (max-width: $mobile) {
+    min-height: initial;
+    text-align: center;
+    font-size: 18px;
+    background: url("../../img/banner-bg-mobile.webp") center bottom no-repeat;
+    padding: 15px 15px 200px 15px;
+  }
+}

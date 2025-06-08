@@ -1,0 +1,22 @@
+.footer-copyright {
+  .container {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $blue-light;
+
+    @media screen and (max-width: $mobile) {
+      justify-content: center;
+    }
+  }
+
+  &__counters {
+    display: flex;
+    gap: 6px;
+
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+  }
+}

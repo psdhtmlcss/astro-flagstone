@@ -1,0 +1,17 @@
+// Стили в том числе и для классов Drupal Webform
+.form-control,
+.form-text {
+  height: 44px;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  padding: 0 $col-padding;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.error {
+    border-color: $red;
+    background-color: rgba($red, 0.1);
+  }
+}

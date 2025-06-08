@@ -1,0 +1,20 @@
+$cell-padding: 10px;
+
+.table {
+  background-color: white;
+  border-collapse: collapse;
+  width: 100%;
+
+  &-wrapper {
+    overflow-x: auto;
+  }
+
+  th, td {
+    border: 1px solid $border-color;
+    padding: $cell-padding;
+  }
+
+  th {
+    background-color: $bg-color;
+  }
+}

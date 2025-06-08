@@ -1,0 +1,40 @@
+.cookie-block {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $white;
+  padding: $col-padding 0;
+  z-index: 1000;
+  box-shadow: $box-shadow;
+
+  &.is-hidden {
+    display: none;
+  }
+
+  @media screen and (max-width: $mobile) {
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    border-radius: $border-radius-lg;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .btn {
+    white-space: nowrap;
+  }
+}

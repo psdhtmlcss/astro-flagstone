@@ -1,0 +1,153 @@
+.timeline {
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: $white;
+    left: 50%;
+    margin-left: -1px;
+
+    @media screen and (max-width: $xxs) {
+      display: none;
+    }
+  }
+
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  li {
+    list-style-type: none;
+    margin-bottom: $col-padding;
+    position: relative;
+    width: 50%;
+    float: left;
+    clear: left;
+
+    @media screen and (max-width: $xxs) {
+      width: auto;
+      float: none;
+    }
+
+    &:before {
+      content: "";
+      display: table;
+    }
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    &:nth-child(2) {
+      margin-top: 60px;
+
+      @media screen and (max-width: $xxs) {
+        margin-top: 0;
+      }
+    }
+
+    &:nth-child(even) {
+      float: right;
+      clear: right;
+
+      @media screen and (max-width: $xxs) {
+        float: none;
+      }
+
+      .timeline-panel {
+        float: right;
+
+        @media screen and (max-width: $xxs) {
+          float: none;
+        }
+
+        &:after {
+          border-left-width: 0;
+          border-right-width: 14px;
+          left: -14px;
+          right: auto;
+
+          @media screen and (max-width: $xxs) {
+            display: none;
+          }
+        }
+      }
+
+      .timeline-badge {
+        left: -8px;
+        right: auto;
+
+        @media screen and (max-width: $xxs) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &-panel {
+    border-radius: $border-radius;
+    background-color: $white;
+    box-shadow: $box-shadow;
+    padding: $col-padding;
+    width: calc(100% - 25px);
+    position: relative;
+
+    @media screen and (max-width: $xxs) {
+      width: auto;
+    }
+
+    &:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 27px;
+      right: -14px;
+      border-top: 14px solid transparent;
+      border-left: 14px solid $white;
+      border-right: 0 solid $white;
+      border-bottom: 14px solid transparent;
+
+      @media screen and (max-width: $xxs) {
+        display: none;
+      }
+    }
+
+    h4 {
+      margin-top: 0;
+      color: $green;
+    }
+
+    p {
+      font-weight: 300;
+
+      strong {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &-badge {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $white;
+    position: absolute;
+    top: 32px;
+    right: -8px;
+    z-index: 1;
+
+    @media screen and (max-width: $xxs) {
+      display: none;
+    }
+  }
+}

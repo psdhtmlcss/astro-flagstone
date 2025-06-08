@@ -1,0 +1,45 @@
+// Colors
+$black: #1E2027;
+$blue-dark: #2A2E3A;
+$blue-light: #8A8E9A;
+$blue: #365ED6;
+$green: #09B850;
+$green-light: #52EA8F;
+$orange: #FE7439;
+$red: #E74343;
+$border-color: #C5CBDC;
+$bg-color: #F3F5FA;
+$white: white;
+
+$text-success: $green;
+$text-danger: $red;
+
+
+// Margins
+$col-padding: 15px;
+$gap: 30px;
+
+// Sizes 
+$max-width: 1260px;
+$aside-width: 270px;
+
+// Border radius
+$border-radius: 5px;
+$border-radius-md: 10px;
+$border-radius-lg: 15px;
+
+// Box shadow
+$box-shadow: 0 5px 10px rgba($black, .05);
+// Text shadow
+$text-shadow: 0 2px 10px rgba($blue-dark, .5);
+
+// Breakpoints 
+$pc: 1259px;
+$tablet: 1023px;
+$mobile: 767px;
+$s: 639px;
+$xs: 425px;
+$xxs: 374px;
+
+// Swiper var
+$themeColor: #ffffff;

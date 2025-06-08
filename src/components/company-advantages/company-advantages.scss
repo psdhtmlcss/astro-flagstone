@@ -1,0 +1,51 @@
+.company-advantages {
+  background-color: $white;
+
+  h2 {
+    margin-bottom: 50px;
+
+    @media screen and (max-width: $mobile) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    width: calc(50% - 15px);
+    flex-shrink: 0;
+    display: flex;
+    gap: 15px;
+
+    @media screen and (max-width: $mobile) {
+      width: auto;
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+      flex-shrink: 0;
+
+      @media screen and (max-width: $mobile) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

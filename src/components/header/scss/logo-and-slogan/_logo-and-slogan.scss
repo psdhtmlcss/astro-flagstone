@@ -1,0 +1,28 @@
+.logo-and-slogan {
+  text-decoration: none;
+  display: block;
+  img {
+    width: 234.94px;
+    height: 40.84px;
+
+    @media screen and (max-width: $mobile) {
+      width: 136px;
+      height: auto;
+    }
+  }
+  span {
+    display: block;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 15px;
+    font-style: italic;
+    color: $blue-light;
+    margin-left: 52px;
+    margin-top: -7px;
+    text-wrap: nowrap;
+
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+  }
+}

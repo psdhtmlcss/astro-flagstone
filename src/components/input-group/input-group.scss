@@ -1,0 +1,26 @@
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+
+  &-text:not(:first-child) {
+    border-radius: 0 $border-radius $border-radius 0;
+  }
+
+  &-text {
+    background-color: rgba($border-color, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    padding-left: $col-padding;
+    padding-right: $col-padding;
+    border: 1px solid $border-color;
+  }
+
+  .form-control:not(:last-child) {
+    border-radius: $border-radius 0 0 $border-radius;
+    border-right: 0;
+  }
+}

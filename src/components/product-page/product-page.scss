@@ -1,0 +1,30 @@
+.product-page {
+  @media screen and (max-width: $mobile) {
+    padding-top: 100px;
+  }
+
+  &__content {
+
+    @media screen and (max-width: $mobile) {
+      padding-top: 0;
+
+      &>.container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  &__heading {
+    @media screen and (max-width: $mobile) {
+      margin-bottom: 0;
+    }
+  }
+
+  // Drupal markup
+  h1 {
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+  }
+}

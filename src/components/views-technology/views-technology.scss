@@ -1,0 +1,42 @@
+.views-technology {
+  display: flex;
+  gap: $gap;
+
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+  }
+
+  &__view {
+    width: calc(100% - 15px);
+    background-color: $white;
+    border-radius: $border-radius-lg;
+    box-shadow: $box-shadow;
+    padding: 15px;
+
+    @media screen and (max-width: $mobile) {
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 25px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+
+        svg {
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+}

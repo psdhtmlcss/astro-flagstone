@@ -1,0 +1,55 @@
+.left-nav {
+  
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    display: block;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $blue-dark;
+    @include transition(color);
+
+    &:hover {
+      color: $green; 
+    }
+
+    &.is-active,
+    &.active {
+      color: $green;
+    }
+  }
+
+  &__submenu {
+    padding-bottom: 10px;
+    padding-left: $gap;
+
+    &-item {
+      list-style-type: disc;
+    }
+
+    &-link {
+      display: block;
+      padding: 5px 0;
+      text-decoration: none;
+      color: $blue-dark;
+      @include transition(color);
+
+      &:hover {
+        color: $green;
+      }
+
+      &.is-active,
+      &.active {
+        font-weight: 700;
+      }
+    }
+  }
+}

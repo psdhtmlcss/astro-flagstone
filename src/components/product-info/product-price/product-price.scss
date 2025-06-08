@@ -1,0 +1,25 @@
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 60px;
+  background-color: white;
+  box-shadow: $box-shadow;
+  padding: 0 $col-padding;
+  border-radius: $border-radius;
+  font-weight: bold;
+  color: $blue-light;
+
+  svg {
+    margin-right: 6px;
+  }
+
+  strong {
+    color: $blue-dark;
+    font-size: 20px;
+
+    small {
+      font-size: 16px;
+    }
+  }
+}

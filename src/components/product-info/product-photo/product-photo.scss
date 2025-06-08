@@ -1,0 +1,33 @@
+.product-photo {
+
+  @media screen and (max-width: $mobile) {
+    background-color: white;
+  }
+
+  img {
+    display: block;
+    width: auto;
+    height: 454px;
+
+    @media screen and (max-width: $tablet) {
+      height: auto;
+    }
+
+    @media screen and (max-width: $mobile) {
+      height: 404px;
+      min-width: 425px;
+    }
+  }
+
+  &.h-auto {
+
+    img {
+      height: auto;
+      border-radius: $border-radius-lg;
+
+      @media screen and (max-width: $mobile) {
+        border-radius: 0;
+      }
+    }
+  }
+}

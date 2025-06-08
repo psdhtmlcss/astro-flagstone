@@ -1,0 +1,21 @@
+@mixin transition($property: all) {
+  transition: $property 0.2s ease-in-out;
+}
+
+@mixin transition-collapse() {
+  transition: height .35s ease;
+}
+
+@mixin transition-modal() {
+  transition: transform .3s ease-out;
+}
+
+// Свойства фоновых изображений для радио в форме обратной связи
+@mixin bg-settings-form-feedback() {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}

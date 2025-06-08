@@ -1,0 +1,47 @@
+$header-height: 60px;
+
+.accordion {
+  background-color: white;
+  border-radius: $border-radius-lg;
+  box-shadow: $box-shadow;
+
+  &__item:not(:last-child) {
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $header-height;
+    padding: 0 $col-padding;
+    margin: 0;
+
+    svg {
+      flex-shrink: 0;
+      @include transition(transform);
+    }
+  }
+
+  &__button {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: $blue-dark;
+
+    &:not(.collapsed) + svg {
+      transform: rotate(45deg);
+    }
+  }
+
+  &__body {
+    padding: $gap $col-padding;
+    border-top: 1px solid $border-color;
+  }
+}

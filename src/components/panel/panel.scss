@@ -1,0 +1,9 @@
+.panel {
+  background-color: $white;
+  border-radius: $border-radius-lg;
+  box-shadow: $box-shadow;
+  
+  .panel-body {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,75 @@
+.ratings-block {
+  padding: $gap 0;
+  background-color: $white;
+  text-align: center;
+
+  &__heading {
+    font-size: 25px;
+    margin-bottom: $col-padding;
+  }
+
+  p {
+    margin: 0 0 $gap;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    gap: $col-padding;
+
+    @media screen and (max-width: $mobile) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    flex-basis: 25%;
+
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 32px;
+
+      img {
+        height: 30px;
+        width: auto;
+      }
+    }
+  }
+
+  &__rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $col-padding;
+  }
+
+  &__stars {
+    display: flex;
+    gap: $col-padding;
+    position: relative;
+    height: 12px;
+    width: 73px;
+  }
+
+  &__stars-active {
+    background: url("@/img/icons/stars-active.svg") left top no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 12px;
+  }
+
+  &__stars-empty {
+    background: url("@/img/icons/stars.svg") left top no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 73px;
+    height: 12px;
+  }
+}

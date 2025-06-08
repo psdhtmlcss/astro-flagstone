@@ -1,0 +1,19 @@
+.banner-sale {
+  background: url("../../img/banner-sale.webp") left top no-repeat;
+  background-size: cover;
+  min-height: 230px;
+  padding: 10px 15px;
+  font-size: 30px;
+  line-height: 1.2;
+  border-radius: $border-radius-lg;
+  text-decoration: none;
+  color: $blue-dark;
+
+  @media screen and (max-width: $mobile) {
+    min-height: initial;
+    text-align: center;
+    font-size: 18px;
+    background: url("../../img/banner-sale-mobile.webp") center bottom no-repeat;
+    padding: 15px 15px 200px 15px;
+  }
+}

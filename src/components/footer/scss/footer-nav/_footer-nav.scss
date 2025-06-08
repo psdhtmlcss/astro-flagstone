@@ -1,0 +1,53 @@
+.footer-nav {
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__link {
+    display: block;
+    padding: 5px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    @include transition(color);
+
+    @media screen and (max-width: $tablet) {
+      text-align: center;
+    }
+
+    &:hover {
+      color: $green-light;
+    }
+  }
+
+  &__submenu {
+    padding-left: $gap;
+
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
+
+    &-item {
+      color: $blue-light;
+      list-style-type: disc;
+    }
+
+    &-link {
+      color: $blue-light;
+      display: block;
+      padding: 5px 0;
+      text-decoration: none;
+      @include transition(color);
+
+      &:hover {
+        color: $green-light;
+      }
+    }
+  }
+}

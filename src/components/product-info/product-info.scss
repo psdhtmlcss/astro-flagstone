@@ -1,0 +1,138 @@
+@import "product-heading/product-heading";
+@import "product-price/product-price";
+@import "product-properties/product-properties";
+@import "product-actions/product-actions";
+@import "product-photo/product-photo";
+
+.product-info {
+  &__top {
+    display: flex;
+    gap: $gap;
+    margin-bottom: $gap;
+
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: $mobile) {
+      gap: 0;
+    }
+  }
+
+  &__photo {
+    width: 428px;
+    height: 454px;
+    overflow: hidden;
+    border-radius: $border-radius-lg;
+    flex-shrink: 0;
+
+    @media screen and (max-width: $tablet) {
+      width: auto;
+      height: auto;
+    }
+
+    @media screen and (max-width: $mobile) {
+      border-radius: 0;
+    }
+
+    &.h-auto {
+      height: auto;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    width: 100%;
+  }
+
+  &__price {
+    @media screen and (max-width: $mobile) {
+      border-radius: 0;
+    }
+  }
+
+  &__short-description {
+    @media screen and (max-width: $mobile) {
+      padding: 0 $col-padding;
+    }
+
+    p {
+      margin: 0;
+
+      & + p {
+        margin-top: $col-padding;
+      }
+    }
+    
+  }
+
+  &__photo-link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: $border-radius;
+    background-color: white;
+    padding: 10px $col-padding;
+    margin-top: $col-padding;
+
+    svg {
+      width: 32px;
+      height: auto;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+
+  &__video {
+    @media screen and (max-width: $mobile) {
+      padding: 0 $col-padding;
+
+      video {
+        width: 100%;
+      }
+    }
+  }
+
+  &__properties {
+    @media screen and (max-width: $mobile) {
+      padding: 0 $col-padding;
+    }
+  }
+
+  &__accordion {
+    margin-bottom: 30px;
+
+    @media screen and (max-width: $mobile) {
+      border-radius: 0;
+    }
+
+    .note {
+      margin-top: 10px;
+    }
+  }
+
+  &__actions {
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: $col-padding;
+
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+
+    .btn-outline-default {
+      margin-right: auto;
+    }
+  }
+}

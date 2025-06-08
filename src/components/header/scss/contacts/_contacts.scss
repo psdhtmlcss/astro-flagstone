@@ -1,0 +1,23 @@
+.contacts {
+  text-align: right;
+
+  a {
+    text-decoration: none;
+    color: $blue-dark;
+  }
+
+  span {
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: end;
+  }
+}

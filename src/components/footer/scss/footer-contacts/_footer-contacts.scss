@@ -1,0 +1,46 @@
+.footer-contacts {
+  font-style: normal;
+
+  @media screen and (max-width: $tablet) {
+    text-align: center;
+  }
+
+  p {
+    margin: 5px 0 15px;
+    color: $blue-light;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    @include transition(color);
+    text-wrap: nowrap;
+
+    &:hover {
+      color: $green-light;
+    }
+  }
+
+  .align-items-center { 
+    gap: 4px;
+  }
+
+  &__social {
+    a {
+      display: inline-flex;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(white, .1);
+      border: 1px solid $blue-light;
+      @include transition;
+
+      &:hover {
+        background-color: rgba(white, .9);
+        border-color: white;
+      }
+    }
+  }
+}

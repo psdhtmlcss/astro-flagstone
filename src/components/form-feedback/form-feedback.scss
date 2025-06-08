@@ -1,0 +1,41 @@
+.form-feedback {
+  display: flex;
+  flex-direction: column;
+  gap: $col-padding;
+
+  .form-control {
+    width: 100%;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    @media screen and (max-width: $xs) {
+      gap: 5px;
+    }
+
+    @media screen and (max-width: $xxs) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      height: 38px;
+    
+      @media screen and (max-width: $xs) {
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 5px;
+      }
+    }
+  }
+
+  &__privacy {
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: $blue-light;
+  }
+}

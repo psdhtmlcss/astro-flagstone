@@ -1,0 +1,42 @@
+@import "scss/footer-nav/footer-nav";
+@import "scss/footer-contacts/footer-contacts";
+@import "scss/footer-copyright/footer-copyright";
+@import "scss/footer-links/footer-links";
+
+.footer {
+  
+  @media screen and (max-width: $mobile) {
+    padding-bottom: 141px;
+  }
+
+  &__nav {
+    padding: $gap 0;
+    background-color: $blue-dark;
+
+    .row {
+      justify-content: space-between;
+      gap: $gap;
+
+      @media screen and (max-width: $tablet) {
+        flex-wrap: wrap;
+
+        .col {
+          display: none;
+        }
+
+        .col:last-child {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: $mobile) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__copyright {
+    background-color: $black;
+  }
+}

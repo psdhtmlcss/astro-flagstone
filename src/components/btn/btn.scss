@@ -1,0 +1,82 @@
+$height: 44px;
+$height-lg: 60px;
+
+.btn {
+  height: $height;
+  border: 0;
+  outline: none;
+  padding: 0 $col-padding;
+  background-color: transparent;
+  font-weight: 500;
+  border-radius: $border-radius;
+  @include transition(background-color);
+  cursor: pointer;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  text-decoration: none;
+
+  &-primary {
+    background-color: $blue-dark;
+    
+
+    &:hover {
+      background-color: lighten($blue-dark, 10);
+    }
+  }
+
+  &-success {
+    background-color: $green;
+
+    &:hover {
+      background-color: lighten($green, 5);
+    }
+  }
+
+  &-default {
+    border: 1px solid $border-color;
+    background-color: $white;
+    color: $blue-dark;
+  }
+
+  &-outline-default {
+    border: 1px solid $border-color;
+    color: $blue-dark;
+
+    &:hover {
+      background-color: $border-color;
+    }
+  }
+
+  &-lg {
+    height: $height-lg;
+    padding: 0 $gap;
+    font-size: 18px;
+  }
+
+  &-check {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+
+    &:checked+.btn {
+      background-color: rgba($border-color, .3);
+    }
+  }
+
+  // Modal close button
+  &-close {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    height: auto;
+    line-height: 0;
+    cursor: pointer;
+  }
+}
+
+a.btn {
+  text-align: center;
+}

@@ -1,0 +1,91 @@
+.align-items-center {
+  display: inline-flex;
+  align-items: center;
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.nowrap {
+  text-wrap: nowrap;
+}
+
+// Color 
+.text-success {
+  color: $text-success;
+}
+
+.text-danger {
+  color: $text-danger;
+}
+
+// Grid
+.row {
+  display: flex;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+// Collapse
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  @include transition-collapse;
+}
+
+.fade {
+  transition: opacity .15s linear;
+}
+
+.fade:not(.show) {
+  opacity: 0;
+}
+
+// Border
+.border {
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  display: inline-block;
+  padding: 5px;
+}
+
+// Media
+.media {
+  display: flex;
+  gap: $col-padding;
+
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+  }
+
+  &__img {
+    width: 250px;
+    flex-shrink: 0;
+
+    @media screen and (max-width: $mobile) {
+      width: 100%;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
