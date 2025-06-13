@@ -1,3 +1,12 @@
+---
+const Rating = {
+  YANDEX: 4.5,
+  GOOGLE: 4.6,
+  GIS: 4.5,
+  ZOON: 4.2
+}
+---
+
 <section class="ratings-block">
   <div class="container">
     <h2 class="ratings-block__heading">Независимые рейтинги</h2>
@@ -18,9 +27,9 @@
         <div class="ratings-block__rating">
           <div class="ratings-block__stars">
             <span class="ratings-block__stars-empty"></span>
-            <span class="ratings-block__stars-active" style="width: {{ 4.3 * 100 / 5 }}%"></span>
+            <span class="ratings-block__stars-active" style={`width: ${Rating.YANDEX * 100 / 5}%`}></span>
           </div>
-          <strong>4.3</strong>
+          <strong>{Rating.YANDEX}</strong>
         </div>
       </div>
       <div class="ratings-block__item">
@@ -30,9 +39,9 @@
         <div class="ratings-block__rating">
           <div class="ratings-block__stars">
             <span class="ratings-block__stars-empty"></span>
-            <span class="ratings-block__stars-active" style="width: {{ 4.6 * 100 / 5 }}%"></span>
+            <span class="ratings-block__stars-active" style={`width: ${Rating.GOOGLE * 100 / 5}%`}></span>
           </div>
-          <strong>4.6</strong>
+          <strong>{Rating.GOOGLE}</strong>
         </div>
       </div>
       <div class="ratings-block__item">
@@ -42,9 +51,9 @@
         <div class="ratings-block__rating">
           <div class="ratings-block__stars">
             <span class="ratings-block__stars-empty"></span>
-            <span class="ratings-block__stars-active" style="width: {{ 4.6 * 100 / 5 }}%"></span>
+            <span class="ratings-block__stars-active" style={`width: ${Rating.GIS * 100 / 5}%`}></span>
           </div>
-          <strong>4.6</strong>
+          <strong>{Rating.GIS}</strong>
         </div>
       </div>
       <div class="ratings-block__item">
@@ -54,9 +63,9 @@
         <div class="ratings-block__rating">
           <div class="ratings-block__stars">
             <span class="ratings-block__stars-empty"></span>
-            <span class="ratings-block__stars-active" style="width: {{ 4.2 * 100 / 5 }}%"></span>
+            <span class="ratings-block__stars-active" style={`width: ${Rating.ZOON * 100 / 5}%`}></span>
           </div>
-          <strong>4.2</strong>
+          <strong>{Rating.ZOON}</strong>
         </div>
       </div>
     </div>
