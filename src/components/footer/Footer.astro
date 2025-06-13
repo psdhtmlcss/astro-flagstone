@@ -1,4 +1,4 @@
-<footer class="page__footer footer {{ footerClass }}">
+<footer class="page__footer footer">
   <section class="footer__top">
     <div class="container"></div>
   </section>
@@ -91,8 +91,8 @@
               <span>Мы в соц. сетях:</span>
               <span class="align-items-center">
                 <a href="https://vk.com/flagstoun" target="newtab"><img src="/src/img/icons/vk.svg" width="14" alt="VK"></a>
-                {# <a href="https://t.me/flag_stoun_samara" target="newtab"><img src="/src/img/icons/telegram.svg" width="14" alt="Telegram"></a> #}
-                {# <a href="https://www.youtube.com/channel/UC7SMgsCK8Sp1Ymlrp0zcBrg" target="newtab"><img src="/src/img/icons/youtube.svg" width="14" alt="Youtube"></a> #}
+                <!-- <a href="https://t.me/flag_stoun_samara" target="newtab"><img src="/src/img/icons/telegram.svg" width="14" alt="Telegram"></a>
+                <a href="https://www.youtube.com/channel/UC7SMgsCK8Sp1Ymlrp0zcBrg" target="newtab"><img src="/src/img/icons/youtube.svg" width="14" alt="Youtube"></a> -->
               </span>
             </p>
           </address>
@@ -113,7 +113,7 @@
       <script>
         const currentYearField = document.querySelector('.js-current-year');
         const date = new Date();
-        const currentYear = date.getFullYear();
+        const currentYear = String(date.getFullYear());
         currentYearField.textContent = currentYear;
       </script>
       <div class="footer-copyright__counters">

@@ -1,27 +1,12 @@
 ---
-// Добро пожаловать в Astro! Всё, что находится между символами «---» — это
-// «метаданные компонента». Они никогда не отображаются в браузере.
-console.log('Это запускается в терминале, а не в браузере!');
+import Landing from '@/layouts/Landing.astro';
 ---
-<!-- Ниже приведён «шаблон компонента». Это просто HTML, но с
-    небольшой магией, чтобы помочь вам создавать великолепные шаблоны. -->
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Astro</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" lang="scss" href="/src/components/styles.scss">
-    <meta name="generator" content={Astro.generator} />
-    <meta name="robots" content="noindex">
-  </head>
-  <body>
-    <h1>Flagstone</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-  </body>
-</html>
-<style>
-  h1 {
-    color: orange;
-  }
-</style>
+
+<Landing title='main page' classes="index-page">
+  <h1>Flagstone</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+</Landing>
