@@ -1,4 +1,4 @@
-import { header, headerNav, body } from "../../../variables";
+import { header, headerNav, body } from "@/components/variables";
 
 const closeButton = header.querySelector('.js-close-button');
 
