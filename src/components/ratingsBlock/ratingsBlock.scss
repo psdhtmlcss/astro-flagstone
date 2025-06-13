@@ -57,7 +57,7 @@
   }
 
   &__stars-active {
-    background: url("@/img/icons/stars-active.svg") left top no-repeat;
+    background: url("/public/img/icons/stars-active.svg") left top no-repeat;
     position: absolute;
     left: 0;
     top: 0;
@@ -65,7 +65,7 @@
   }
 
   &__stars-empty {
-    background: url("@/img/icons/stars.svg") left top no-repeat;
+    background: url("/public/img/icons/stars.svg") left top no-repeat;
     position: absolute;
     left: 0;
     top: 0;
