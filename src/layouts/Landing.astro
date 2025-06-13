@@ -7,13 +7,13 @@ import RatingsBlock from '@/components/ratingsBlock/ratingsBlock.astro';
 import MobileFixedPanel from '@/components/mobileFixedPanel/MobileFixedPanel.astro';
 import CookieBlock from '@/components/cookieBlock/cookieBlock.astro';
 import '@/components/styles.scss';
-const { title, classess } = Astro.props;
+const { title, classes } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="ru" class="page">
   <Head title={title} />
-  <body class=`page__body ${classess}`>
+  <body class=`page__body ${classes ? classes : ''}`>
     <Header />
     <ProductsNav />
     <slot />
