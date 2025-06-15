@@ -13,7 +13,7 @@ args.forEach(arg => {
 });
 
 const outputPath = params.outputName 
-    ? path.join(__dirname, '..', 'src', 'data', params.outputName) 
+    ? path.join(__dirname, '..', 'src', 'data/prices', params.outputName) 
     : console.log('Не указано имя выходного файла');
 
 const writeData = (response) => {
